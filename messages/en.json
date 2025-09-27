@@ -4,5 +4,11 @@
         "rankings":"Rankings",
         "connectWallet":"Connect a wallet",
         "signUp":"Sign Up"
-    }
+    },
+    "HeroContent":{
+        "totalSale":"Total Sale",
+        "auctions":"Rankings",
+        "connectWallet":"Connect a wallet",
+        "signUp":"Sign Up"
+}
 }

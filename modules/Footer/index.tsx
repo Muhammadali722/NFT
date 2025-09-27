@@ -30,7 +30,7 @@ const Footer = () => {
                     <div className="w-full sm:w-[420px]">
                         <Heading classList="mb-[25px]">Join our weekly digest</Heading>
                         <Text classList="mb-[20px] max-w-[330px]">Get exclusive promotions & updates straight to your inbox.</Text>
-                        <SendEmail/>
+                        {/* <SendEmail/> */}
                     </div>
                 </div>
                 <Text classList="!text-[12px] font-normal">Ⓒ NFT Market. Use this template freely.</Text>

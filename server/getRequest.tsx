@@ -1,25 +1,10 @@
-import  API  from "../hooks";
+const API = "http://13.60.46.66"; // Replace with your actual API base URL
 
-export const getRequest = async (url: string) => {
-    const res = await fetch(`${API}${url}`, {
-        next: { revalidate: 60 },
-    });
-    return res.json()
+export const getRequest = async (url:string) =>{
+	const res = await fetch(`${API}${url}`,{
+		next: { revalidate: 60 },
+	})
+	return res.json();
 }
 
-// import API from "../hooks"; 
-// export const getRequest = async (url: string) => {
-//   if (!API) {
-//     throw new Error("API is not defined. Check your .env.local file.");
-//   }
 
-//   const res = await fetch(`${API}${url}`, {
-//     next: { revalidate: 60 },
-//   });
-
-//   if (!res.ok) {
-//     throw new Error(`Failed to fetch: ${res.status} ${res.statusText}`);
-//   }
-
-//   return res.json();
-// };
