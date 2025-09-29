@@ -9,6 +9,7 @@ import Header from './Header'
 import Hero from './Hero'
 import Collections from './Collection'
 import Creator from './Creators'
+import Categories from './Categories'
 
 import Footer from './Footer'
-export { Header, Footer, Hero, Collections, Creator }
+export { Header, Footer, Hero, Collections,Categories, Creator }

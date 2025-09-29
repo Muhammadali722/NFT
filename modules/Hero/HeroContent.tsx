@@ -5,6 +5,8 @@ import { Button, CustomImage, Heading, Text } from '../../components'
 import { RoketaIcon } from '../../icons'
 import { FC } from 'react'
 
+
+const API = "http://13.60.46.66";
 const HeroContent: FC<{ auctions: AuctionType[], artists: UserType[], totalSale: AuctionResulType[] }> = ({ auctions, artists, totalSale }) => {
 
   return (
@@ -26,7 +28,7 @@ const HeroContent: FC<{ auctions: AuctionType[], artists: UserType[], totalSale:
               </div>
               <div>
                 <strong className='font-bold text-white text-[28px]'>+</strong>
-                <Text classList='!text-[23px]'>Artists</Text>
+                <Text classList='!text-[23px]' >  Artists</Text>
               </div>
             </div>
           </div>

@@ -6,5 +6,3 @@ export const getRequest = async (url:string) =>{
 	})
 	return res.json();
 }
-
-

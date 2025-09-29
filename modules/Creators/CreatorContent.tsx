@@ -21,9 +21,9 @@ const CreatorContent: FC<{ creators: CreatorType[] }> = ({ creators }) => {
 					</Button>
 				</div>
 				<div className='flex items-center justify-between'>
-					{/* {creators.map((item, index) => (
+					{creators.map((item, index) => (
 						<CreatorCard key={item.id} item={item} index={index} />
-					))} */}
+					))}
 				</div>
 			</div>
 		</section>

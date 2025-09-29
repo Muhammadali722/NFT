@@ -1,20 +1,5 @@
-// import { Hero } from '@/modules'
-// import HeroContent from '@/modules/Hero/HeroContent'
-// import React from 'react'
 
-// const page = () => {
-//   return (
-//     <main>
-//       {/* <Hero/> */}
-//       <HeroContent/>
-
-//     </main>
-//   )
-// }
-
-// export default page
-
-import { Collections, Creator, Hero } from '@/modules'
+import { Categories, Collections, Creator, Hero } from '@/modules'
 
 export default function Home() {
 	return (
@@ -22,6 +7,7 @@ export default function Home() {
 			<Hero />
 			<Collections />
 			<Creator />
+			<Categories/>
 		</main>
 	)
 }

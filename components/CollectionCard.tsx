@@ -1,10 +1,12 @@
 import { CollectionType } from '@/@types/CollectionType'
 import { FC } from 'react'
 import CustomImage from './CustomImage'
-import  API  from '@/hooks'
+// import { API } from '@/hooks'
 import Heading from './Heading'
 import Text from './Text'
 
+
+const API = "http://13.60.46.66"; 
 const CollectionCard: FC<{ item: CollectionType }> = ({ item }) => {
 	return (
 		<div className='w-full sm:w-[330px]'>

@@ -1,10 +1,13 @@
 import { CreatorType } from '@/@types/CreatorType'
 import { FC } from 'react'
 import CustomImage from './CustomImage'
-import  API  from '@/hooks'
+// import { API } from '@/hooks'
 import Heading from './Heading'
 import Text from './Text'
 
+
+
+const API = "http://13.60.46.66";
 const CreatorCard: FC<{ item: CreatorType; index: number }> = ({
 	item,
 	index,
@@ -13,7 +16,8 @@ const CreatorCard: FC<{ item: CreatorType; index: number }> = ({
 		<div className='w-[240px] relative bg-[#3b3b3b] text-center rounded-[20px] p-[20px]'>
 			<CustomImage
 				classList='!mb-[20px] !mx-auto'
-				src={`${API}/file${item.image}`}
+				// src={`${API}/file${item.image}`}
+				src={`${API}/file/${item.image}`}
 				alt='Creator image'
 				W={120}
 				H={120}

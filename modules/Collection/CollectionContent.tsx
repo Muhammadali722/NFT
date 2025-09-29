@@ -2,9 +2,7 @@ import { CollectionType } from '../../@types/CollectionType'
 import { CollectionCard, Heading, Text } from '@/components'
 import { FC } from 'react'
 
-const CollectionContent: FC<{ collections: CollectionType[] }> = ({
-	collections,
-}) => {
+const CollectionContent: FC<{ collections: CollectionType[] }> = ({collections,}) => {
 	return (
 		<section className='py-[80px]'>
 			<div className='containers'>
@@ -15,7 +13,7 @@ const CollectionContent: FC<{ collections: CollectionType[] }> = ({
 					Checkout our weekly updated trending collection.
 				</Text>
 				<div className='flex justify-center gap-[30px] lg:gap-0 lg:justify-between flex-wrap'>
-					{collections?.map(item => (
+					{collections.map(item => (
 						<CollectionCard key={item.id} item={item} />
 					))}
 				</div>
