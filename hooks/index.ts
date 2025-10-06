@@ -1,3 +1,3 @@
-import API from "./getEnv"
+import { API } from "./getEnv"
 
 export {API}

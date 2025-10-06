@@ -1,4 +1,4 @@
-import { CustomImage, Heading, SendEmail, Text } from "@/components"
+import { CustomImage, Heading, Input,  Text } from "@/components"
 import { DisCordIcon, InstagramIcon, TwetterIcon, YouTubeIcon } from "@/icons"
 import Link from "next/link"
 import { ReactNode } from "react"
@@ -31,6 +31,7 @@ const Footer = () => {
                         <Heading classList="mb-[25px]">Join our weekly digest</Heading>
                         <Text classList="mb-[20px] max-w-[330px]">Get exclusive promotions & updates straight to your inbox.</Text>
                         {/* <SendEmail/> */}
+                        <Input showIcon={false}   />
                     </div>
                 </div>
                 <Text classList="!text-[12px] font-normal">Ⓒ NFT Market. Use this template freely.</Text>

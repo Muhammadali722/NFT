@@ -9,3 +9,17 @@ body{
     margin: 0 auto;
     padding: 0 20px;
 }
+.Free-img {
+    background-image: url('../../public/Back-img.png');
+    background-size: cover;
+    background-position: fixed;
+    width: 100%;
+    height: 660px;
+}
+.Users-infoBackground {
+    background-image: url('../../public/User-back-view.png');
+    background-size: cover;
+    background-position: fixed;
+    width: 100%;
+    height: 320px;
+}
