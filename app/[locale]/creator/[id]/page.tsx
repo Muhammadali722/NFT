@@ -12,7 +12,7 @@ const SingleCreator: FC<{ params: { id: string } }> = async ({ params }) => {
         <div className="Users-infoBackground">
           <CustomImage
           src={SingleData?.image}
-          alt="User's Picture"
+          alt="Users Picture"
           W={120}
           H={120}
           />

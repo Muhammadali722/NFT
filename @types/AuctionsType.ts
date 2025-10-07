@@ -1,4 +1,5 @@
 import { NFTType } from './NFTType'
+import { CreatorType } from './CreatorType'
 
 export interface AuctionType {
 	id: string

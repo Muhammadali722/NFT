@@ -7,4 +7,5 @@ import Categories from './Categories'
 import NFT from './NFT'
 import Auctions from './Auction'
 import Works from './Work/Works'
-export { Header,  Hero, Collections, Creator, Categories, NFT, Auctions,Works, Footer }
+import MarketplaceNFT from './marketplace'
+export { Header,  Hero, Collections, Creator, Categories, NFT, Auctions, Works, MarketplaceNFT,  Footer }

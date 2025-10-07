@@ -1,5 +1,4 @@
 import { CreatorType } from './CreatorType'
-
 export interface NFTType {
 	id: string
 	title: string
@@ -11,7 +10,7 @@ export interface NFTType {
 	creatorId: string
 	ownerId: string
 	creator: CreatorType
-	owner: {
+	owner:{
 		id: string
 		username: string
 		email: string

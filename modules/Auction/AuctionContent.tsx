@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { AuctionType } from '@/@types/AuctionsType'
 import { AuctionCountdown, Button, CustomImage, Heading } from '@/components'
 import { API } from '@/hooks'
@@ -26,12 +27,14 @@ const AuctionContent: FC<{ auctions: AuctionType }> = ({ auctions }) => {
 						{auctions.nft.creator.username}
 					</button>
 					<Heading classList='!mb-[30px]'>{auctions.nft.title}</Heading>
-					<Button
-						classList='!bg-white !text-black !px-[50px]'
-						iconPosition='left'>
-						See NFT
-					</Button>
+
+					<Link href={`/auction/${auctions.id}`}>
+						<Button classList='!bg-white !text-black !px-[50px]' iconPosition='left'>
+							See NFT
+						</Button>
+					</Link>
 				</div>
+
 				<AuctionCountdown />
 			</div>
 		</section>

@@ -12,7 +12,7 @@ const CreatorCard: FC<{ item: CreatorType; index: number }> = ({
 }) => {
   return (
     <Link
-      href={`/creator/${item.id}`} // 🔹 shu joy – creator bosilganda o'tadi
+      href={`/creator/${item.id}`}
       className="w-[240px] relative bg-[#3b3b3b] text-center rounded-[20px] p-[20px] block hover:scale-[1.03] transition-transform"
     >
       <CustomImage

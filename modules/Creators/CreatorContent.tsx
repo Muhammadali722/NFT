@@ -4,21 +4,69 @@ import { FC } from 'react'
 
 const CreatorContent: FC<{ creators: CreatorType[] }> = ({ creators }) => {
 	return (
-		<section className='py-[80px]'>
-			<div className='containers'>
-				<div className='flex items-center justify-between mb-[60px]'>
-					<div>
-						<Heading classList='!mb-[10px]' tag='h2'>Top Creators</Heading>
-						<Text classList='!text-[22px]'>Checkout Top Rated Creators on the NFT Marketplace</Text>
-					</div>
-					<Button>View Rankings</Button>
-				</div>
-				<div className='flex items-center justify-between'>
-					{creators.map((item, index) => (
-						<CreatorCard key={item.id} item={item} index={index}/>))}
-				</div>
-			</div>
-		</section>
+		<section className='py-12 md:py-20 lg:py-[80px] bg-transparent'>
+    <div className='containers'>
+        {/* Header with responsive layout */}
+        <div className='flex flex-col lg:flex-row items-center lg:items-end justify-between mb-10 md:mb-14 lg:mb-[60px]gap-6 md:gap-8'>
+            {/* Text Content */}
+            <div className='text-start lg:text-left max-w-2xl'>
+                <Heading 
+                    classList='
+                        !mb-3 md:!mb-4 lg:!mb-[10px]
+                        text-3xl md:text-4xl lg:text-5xl
+                    ' 
+                    tag='h2'
+                >
+                    Top Creators
+                </Heading>
+                <Text classList='
+                    !text-base md:!text-lg lg:!text-[22px]
+                    text-gray-300
+                '>
+                    Checkout Top Rated Creators on the NFT Marketplace
+                </Text>
+            </div>
+
+            {/* Button - hidden on mobile, visible on tablet+ */}
+            <div className='hidden md:block'>
+                <Button classList='px-8 py-4 text-lg hover:scale-105 transition-transform'>
+                    View Rankings
+                </Button>
+            </div>
+        </div>
+
+        {/* Creators Grid */}
+        <div className='
+            grid 
+            grid-cols-1 
+            sm:grid-cols-2 
+            md:grid-cols-3 
+            lg:grid-cols-4 
+            xl:grid-cols-5
+            2xl:grid-cols-6
+            gap-4 sm:gap-6 
+            lg:gap-5 
+            xl:gap-6
+            justify-items-center
+            auto-rows-fr
+        '>
+            {creators.map((item, index) => (
+                <div key={item.id} className='w-full flex justify-center'>
+                    <CreatorCard item={item} index={index} />
+                </div>
+            ))}
+        </div>
+
+        {/* Mobile Only Button */}
+        <div className='flex justify-center mt-10 md:mt-12 lg:hidden'>
+            <Button classList='w-full max-w-xs py-4 text-lg md:hidden'>
+                View All Creators
+            </Button>
+        </div>
+    </div>
+</section>
+
+
 	)
 }
 

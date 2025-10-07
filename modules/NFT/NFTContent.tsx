@@ -1,5 +1,6 @@
 import { NFTType } from '@/@types/NFTType'
 import { Button, Heading, NFTCard, Text } from '@/components'
+import Link from 'next/link'
 import { FC } from 'react'
 
 const NFTContent: FC<{ nft: NFTType[] }> = ({ nft }) => {
@@ -14,10 +15,8 @@ const NFTContent: FC<{ nft: NFTType[] }> = ({ nft }) => {
 						</Heading>
 						<Text classList='!text-[22px]'>Explore new trending NFTs</Text>
 					</div>
-					<Button 
-                    iconPosition='left'>
-						See All
-					</Button>
+					<Link href={'/marketplace'}><Button iconPosition='left'>See All</Button> 
+					</Link>
 				</div>
 				<div className='flex flex-wrap justify-between'>
 					{Object.entries(nft).map(([key, item]) => (

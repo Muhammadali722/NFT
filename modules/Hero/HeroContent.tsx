@@ -36,7 +36,7 @@ const HeroContent: FC<{ auctions: AuctionType[], artists: UserType[], totalSale:
           </div>
         </div>
         <div className='max-w-[510px]'>
-          <CustomImage src={"/hero-img.png"} alt='hero img' W={510} H={401} />
+          <CustomImage classList=' hover:scale-[1.02] duration-200 overflow-hidden ' src={"/hero-img.png"} alt='hero img' W={510} H={401} />
           <div className='py-[22px] mb-[40px] lg:mb-0 px-[20px] bg-[#3B3B3B] rounded-bl-[20px] rounded-br-[20px]'>
             <Heading tag='h3'>Space Walking</Heading>
             <div className='flex items-center gap-[12px] pt-[10px]'>
@@ -48,15 +48,15 @@ const HeroContent: FC<{ auctions: AuctionType[], artists: UserType[], totalSale:
             <Button classList='!w-full' icon={<RoketaIcon />} iconPosition='left' >Get Started</Button>
             <div className='pt-[30px] flex items-center justify-between'>
               <div>
-                <strong className='font-bold text-white text-[28px]'>+</strong>
+                <strong className='font-bold text-white text-[28px]'>{totalSale.length}  +</strong>
                 <Text classList='!text-[16px]'>Total Sale</Text>
               </div>
               <div>
-                <strong className='font-bold text-white text-[28px]'>+</strong>
+                <strong className='font-bold text-white text-[28px]'>{auctions.length} +</strong>
                 <Text classList='!text-[16px]'>Auctions</Text>
               </div>
               <div>
-                <strong className='font-bold text-white text-[28px]'>+</strong>
+                <strong className='font-bold text-white text-[28px]'>{artists.length} +</strong>
                 <Text classList='!text-[16px]'>Artists</Text>
               </div>
             </div>

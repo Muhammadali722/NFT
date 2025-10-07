@@ -5,7 +5,6 @@ import Link from "next/link"
 
 const Header = () => {
   const t = useTranslations("headerContent")
-
   return (
     <div className="px-[30px] lg:px-[50px] py-[15px] lg:py-[20px] flex items-center justify-between">
       <Link href={"/"}>
@@ -15,7 +14,9 @@ const Header = () => {
         <Link className="text-white hover:text-[#A259FF] duration-300 text-[16px] font-semibold" href={"/marketplace"}>{t("marketplace")}</Link>
         <Link className="text-white hover:text-[#A259FF] duration-300 text-[16px] font-semibold" href={"/rankings"}>{t("rankings")}</Link>
         <Link className="text-white hover:text-[#A259FF] duration-300 text-[16px] font-semibold" href={"/connect-wallet"}>{t("connectWallet")}</Link>
+        <Link href={"/sign-up"}>
         <Button icon={<SignUpIcon/>} iconPosition="left">{t("signUp")}</Button>
+        </Link>
       </div>
       <button className="cursor-pointer lg:hidden">
         <HamburgerMenuIcon/>
@@ -25,3 +26,4 @@ const Header = () => {
 }
 
 export default Header
+
