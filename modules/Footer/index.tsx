@@ -1,4 +1,4 @@
-import { CustomImage, Heading, Input,  Text } from "@/components"
+import { CustomImage, Heading, Input, Text } from "@/components"
 import { DisCordIcon, InstagramIcon, TwetterIcon, YouTubeIcon } from "@/icons"
 import Link from "next/link"
 import { ReactNode } from "react"
@@ -7,7 +7,7 @@ const Footer = () => {
     const mediaList = [< DisCordIcon />, <YouTubeIcon />, <TwetterIcon />, <InstagramIcon />]
     return (
         <footer className="bg-[#3B3B3B] py-[30px]">
-            <div className="containers"> 
+            <div className="containers">
                 <div className="flex flex-col gap-[30px] lg:gap-0 lg:flex-row justify-between pb-[30px] border-b-[1px] border-[#858584] mb-[20px]">
                     <div className="max-w-[243px] ">
                         <Link href={"/"}>
@@ -31,7 +31,7 @@ const Footer = () => {
                         <Heading classList="mb-[25px]">Join our weekly digest</Heading>
                         <Text classList="mb-[20px] max-w-[330px]">Get exclusive promotions & updates straight to your inbox.</Text>
                         {/* <SendEmail/> */}
-                        <Input showIcon={false}   />
+                        <Input showIcon={false} />
                     </div>
                 </div>
                 <Text classList="!text-[12px] font-normal">Ⓒ NFT Market. Use this template freely.</Text>

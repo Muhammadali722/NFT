@@ -2,7 +2,7 @@ import { CollectionType } from '../../@types/CollectionType'
 import { CollectionCard, Heading, Text } from '@/components'
 import { FC } from 'react'
 
-const CollectionContent: FC<{ collections: CollectionType[] }> = ({collections,}) => {
+const CollectionContent: FC<{ collections: CollectionType[] }> = ({ collections, }) => {
 	return (
 		<section className='py-[80px]'>
 			<div className='containers'>

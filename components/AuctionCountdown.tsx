@@ -94,7 +94,7 @@ export default function AuctionCountdown() {
                 <div className="text-white/50 text-lg sm:text-xl md:text-2xl pb-4">:</div>
               </>
             )}
-            
+
             <TimeBox value={timeLeft.hours} label="Hours" />
             <div className="text-white/50 text-lg sm:text-xl md:text-2xl pb-4">:</div>
             <TimeBox value={timeLeft.minutes} label="Minutes" />
@@ -105,7 +105,7 @@ export default function AuctionCountdown() {
           {/* Responsive status text */}
           <div className="text-center">
             <p className="text-white/60 text-xs sm:text-sm">
-              {timeLeft.days > 0 
+              {timeLeft.days > 0
                 ? `${timeLeft.days} days ${timeLeft.hours} hours remaining`
                 : `${timeLeft.hours}h ${timeLeft.minutes}m ${timeLeft.seconds}s remaining`
               }
