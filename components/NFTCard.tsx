@@ -10,7 +10,7 @@ const NFTCard: FC<{ item: NFTType }> = ({ item }) => {
 			<div className='overflow-hidden'>
 				<CustomImage classList='hover:scale-[1.2] duration-500' src={`${API}/file/${item.image}`} alt='NFT s Image' W={330} H={296}/>
 			</div>
-			<div className='py-[20px] px-[30px] bg-[#3b3b3b]  overflow-hidden'>
+			<div className='rounded-md py-[20px] px-[30px] bg-[#3b3b3b]  overflow-hidden'>
 				<Heading classList='!mb-[5px]'>{item.title}</Heading>
 				<div className='flex items-center gap-[12px]'>
 					<CustomImage classList='!rounded-full' src={`${API}/file/${item.creator.image}`} alt='Creator s Image' W={24} H={24} />

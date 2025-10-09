@@ -42,29 +42,12 @@ const CreatorContent: FC<{ creators: CreatorType[] }> = ({ creators }) => {
         </div>
 
         {/* Creators Grid */}
-        <div
-          className="
-            grid 
-            grid-cols-1 
-            sm:grid-cols-2 
-            md:grid-cols-3 
-            lg:grid-cols-4 
-            xl:grid-cols-5
-            2xl:grid-cols-6
-            gap-4 sm:gap-6 
-            lg:gap-5 
-            xl:gap-6
-            justify-items-center
-            auto-rows-fr
-        "
-        >
-          {creators.map((item, index) => (
-            <div key={item.id} className="w-full flex justify-center">
+        <div className=" grid  grid-cols-1  sm:grid-cols-2  md:grid-cols-3  lg:grid-cols-4  gap-4 sm:gap-6  lg:gap-5  xl:gap-6 justify-center">
+          {creators.map((item, index) => (<div key={item.id} className="w-full flex flex-wrap justify-center">
               <CreatorCard item={item} index={index} />
             </div>
           ))}
         </div>
-
         {/* Mobile Only Button */}
         <div className="flex justify-center mt-10 md:mt-12 lg:hidden">
         <Link href={"/rankings"}>

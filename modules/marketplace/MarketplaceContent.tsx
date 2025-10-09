@@ -6,7 +6,7 @@ const MarketplaceContent: FC<{ nft: NFTType[] }> = ({ nft }) => {
     console.log(nft)
   return (
     <div>
-        <div className='flex flex-wrap justify-between'>
+        <div className='flex flex-wrap gap-[30px] md:gap-[30px] lg:gap-[30px] justify-center md:justify-between lg:justify-between '>
 					{Object.entries(nft).map(([key, item]) => (<NFTCard key={key} item={item} />))}
 	    </div>
     </div>
